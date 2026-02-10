@@ -61,12 +61,13 @@ button.group.duration-200:active {
 .group:hover .group-hover\:text-indigo-700 {
   color: #3a86ff;
 }
-.hover\:text-indigo-700:hover,
-.hover\:hover:bg-indigo-600:hover,
-.hover\:bg-blue-600:hover{
+.hover\:text-indigo-700:hover{
   color: #3a86ff;
 }
-
+.hover\:hover:bg-indigo-600:hover,
+.hover\:bg-blue-600:hover{
+    backgroud-color: #3a86ff;
+}
 /* 目录字体颜色 */
 .text-indigo-600 {
   color: #3a86ff;
