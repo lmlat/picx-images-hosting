@@ -2,6 +2,46 @@
     border-radius: 100%;
 }
 
+/* 点击状态 */
+div.bg-indigo-400:active,
+button.group.duration-200:active {
+  animation: gradientFlow 6s linear infinite; 
+  transform: translateY(1px) scale(0.98);
+  transition: transform 100ms cubic-bezier(0.3, 0, 0.5, 1),
+              box-shadow 100ms cubic-bezier(0.3, 0, 0.5, 1);
+  box-shadow: 
+    0 2px 15px rgba(31, 38, 135, 0.25),
+    inset 0 0 25px rgba(255, 255, 255, 0.9);
+  &::before {
+    opacity: 0.9;
+    filter: blur(20px);
+    transition: opacity 100ms ease-out;
+  }
+}
+/* 移动端优化 */
+@media (hover: none) {
+  div.bg-indigo-400,
+  button.group.duration-200 {
+    animation: gradientFlow 12s linear infinite;
+    backdrop-filter: blur(3px);
+  }
+  div.bg-indigo-400:active,
+  button.group.duration-200:active {
+    transform: scale(0.97);
+  }
+}
+/* 性能优化补充 */
+@media (prefers-reduced-motion: reduce) {
+  div.bg-indigo-400,
+  button.group.duration-200 {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+
+
+
 .bg-indigo-600 {
   background-color: #3a86ff;
 }
