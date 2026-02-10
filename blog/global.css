@@ -46,8 +46,9 @@ button.group.duration-200:active {
 
 
 
-
-.bg-indigo-600 {
+.bg-indigo-600, 
+.hover\:bg-indigo-600:hover, 
+.hover\:bg-blue-600:hover{
   background-color: #3a86ff;
 }
 .hover\:text-indigo-600:hover {
@@ -64,10 +65,7 @@ button.group.duration-200:active {
 .hover\:text-indigo-700:hover{
   color: #3a86ff;
 }
-.hover\:bg-indigo-600:hover,
-.hover\:bg-blue-600:hover{
-    backgroud-color: #3a86ff;
-}
+
 /* 目录字体颜色 */
 .text-indigo-600 {
   color: #3a86ff;
