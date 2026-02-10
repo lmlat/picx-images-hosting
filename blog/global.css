@@ -1,3 +1,7 @@
+#nav > div > div.flex.flex-nowrap.items-center.cursor-pointer.font-extrabold > img {
+    border-radius: 100%;
+}
+
 .bg-indigo-600 {
   background-color: #3a86ff;
 }
