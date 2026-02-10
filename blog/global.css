@@ -64,7 +64,7 @@ button.group.duration-200:active {
 .hover\:text-indigo-700:hover{
   color: #3a86ff;
 }
-.hover\:hover:bg-indigo-600:hover,
+.hover\:bg-indigo-600:hover,
 .hover\:bg-blue-600:hover{
     backgroud-color: #3a86ff;
 }
