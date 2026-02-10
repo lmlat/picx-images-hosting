@@ -53,3 +53,47 @@
     0 0 0 6px rgba(140, 200, 255, 0.20),
     0 16px 40px rgba(0, 0, 0, 0.55);
 }
+
+/* 页脚footer渐变色滚动动画 */
+@keyframes GradientFlow {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+#footer-bottom {
+  background: linear-gradient(
+    -45deg, 
+    #ff9a8b,  /* 柔和的珊瑚色 */
+    #ff6b9d,  /* 温暖粉紫色 */
+    #a18cd1,  /* 梦幻薰衣草 */
+    #8bc6ec,  /* 清澈湖蓝 */
+    #80e5d2   /* 清新薄荷绿 */
+  );
+  background-size: 300% 300%;
+  animation: GradientFlow 16s ease-in-out infinite;
+  user-select: none;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
+              border-radius 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  will-change: background-position;
+}
+/* 添加半透明光泽层增强质感 */
+#footer-bottom::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: linear-gradient(rgba(255,255,255,0.15), rgba(255,255,255,0));
+  pointer-events: none;
+}
