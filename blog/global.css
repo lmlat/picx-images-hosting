@@ -4,8 +4,7 @@
 
 /* 点击状态 */
 div.bg-indigo-600:active{
-
-    
+    background-color: #3a86ff;
 }
 
 div.bg-indigo-400:active,
