@@ -6,3 +6,25 @@
   -ms-user-select: none !important;
   user-select: none !important;
 }
+
+
+/*旋转动画定义（全前缀）*/
+@-webkit-keyframes spin { 0% { -webkit-transform: rotate(0deg); } 100% { -webkit-transform: rotate(360deg); } }
+@-moz-keyframes spin { 0% { -moz-transform: rotate(0deg); } 100% { -moz-transform: rotate(360deg); } }
+@-o-keyframes spin { 0% { -o-transform: rotate(0deg); } 100% { -o-transform: rotate(360deg); } }
+@-ms-keyframes spin { 0% { -ms-transform: rotate(0deg); } 100% { -ms-transform: rotate(360deg); } }
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+/*无限旋转 */
+.rotate-infinity {
+  -webkit-animation: spin 2s linear infinite;
+  -moz-animation: spin 2s linear infinite;
+  -o-animation: spin 2s linear infinite;
+  -ms-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  display: inline-block;
+}
+
+.rotate-infinity:hover {
+    animation-play-state: paused; /* 鼠标悬停时暂停 */
+}
