@@ -3,6 +3,11 @@
 }
 
 /*blog-*自定义属性*/
+.blog-xiaohongshu{
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.125em;
+}
 
 /* 点击状态 */
 div.bg-indigo-400:active,
