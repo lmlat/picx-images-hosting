@@ -2,6 +2,8 @@
     border-radius: 100%;
 }
 
+/*blog-*自定义属性*/
+
 /* 点击状态 */
 div.bg-indigo-400:active,
 button.group.duration-200:active {
